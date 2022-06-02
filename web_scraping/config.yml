@@ -1,0 +1,8 @@
+CATEGORY_URL: https://technext.ng/category/stories/
+HEADLINE_CLASS: cs-entry__title
+STORY_CLASS: entry-content
+LOAD_MORE_XPATH: .//*[@id="primary"]/div[2]/div[2]/button
+CANCEL_BUTTON_XPATH: .//*[@id="onesignal-slidedown-cancel-button"]
+CANCEL_BUTTON_CLASS: eicon-close
+
+

@@ -7,6 +7,8 @@ A simple python scraper that allows you to scrape articles from the TechNext web
 
 - beautifulsoup4
 - selenium
+- grequests
+- PyYAML
 
 ```
 pip install -r requirements.txt

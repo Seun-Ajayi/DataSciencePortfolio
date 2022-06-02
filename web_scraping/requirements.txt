@@ -1,2 +1,4 @@
 beautifulsoup4==4.9.3
 selenium==4.2.0
+grequests==
+PyYAML==
