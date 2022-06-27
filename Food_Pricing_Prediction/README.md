@@ -4,8 +4,8 @@
 This project is aimed at forecasting or predicting the prices of various agricultural products found in all 36 states, and the federal capital territory, of Nigeria with reference to the prevailing exchange rates from US Dollars to Naira to help Nigerians in planning for the future.
 
 ## Project Setup
-- Creation of a new folder tagged `Final_Project`.
-- Creation of a virtual environment in the `Final_Project` folder.
+- Creation of a new folder tagged `Food_pricing_prediction`.
+- Creation of a virtual environment in the `Food_pricing_prediction` folder.
 ```
 
 python3 -m venv python_env
