@@ -2,3 +2,9 @@ beautifulsoup4==4.9.3
 PyYAML==5.4.1
 requests==2.26.0
 pandas==1.3.3
+scikit-learn==1.1.0
+matplotlib==3.5.2
+pickle
+category-encoders==2.5.0
+catboost==0.26.1
+xgboost==1.6.1
