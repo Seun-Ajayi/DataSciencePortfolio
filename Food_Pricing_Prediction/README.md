@@ -17,8 +17,8 @@ Installation of the required dependencies.
 pip install -r requirements.txt
 ```
 - `Data`
-This project uses the dataset from Nigeria's `National Bureau of Statistics'` tagged `Selected food price` from 2019 to 2021 - [Food_Price_Dataset](https://nigerianstat.gov.ng/resource/SELECTED%20FOOD%20(JAN_2019%20-%20NOV%202021)).
-Data showing the exchange rate from US Dollars to Naira for the corresponding years was also scraped from the `Exchangerates.org.uk` - [USD to Naira](https://www.exchangerates.org.ukUSD-NGN-spot-exchange-rates-history-{year}.html).
+This project uses the dataset from Nigeria's `National Bureau of Statistics'` tagged `Selected food price` from 2019 to 2021 - [Food_Price_Dataset](https://nigerianstat.gov.ng/resource/SELECTED%20FOOD%20)(JAN_2019%20-%20NOV%202021).
+Data showing the exchange rate from US Dollars to Naira for the corresponding years was also scraped from the `Exchangerates.org.uk` - [USD to Naira](https://www.exchangerates.org.uk) USD-NGN-spot-exchange-rates-history-{year}.html).
 
 ## Data Preprocessing 
 - `Data Cleaning`: Pandas is employed to clean the data. It includes transposing of the `Food Price Dataset` and merging the transposed dataset with the scraped `USD to Naira` exchange rates dataset.  
