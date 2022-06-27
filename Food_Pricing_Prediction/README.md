@@ -26,12 +26,12 @@ Data showing the exchange rate from US Dollars to Naira for the corresponding ye
 - `Data Visualization`: 
 
 ## Model Building 
-- Best performing model: Random forest regression
+- Best performing model: CatboostRegressor
 
 ## Future plans
 - Model deployment
 
-## Resources
+
 
 
 
