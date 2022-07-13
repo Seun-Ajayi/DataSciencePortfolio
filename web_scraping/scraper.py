@@ -42,16 +42,26 @@ def init_driver(url, driver):
 
     # Click on the notification pop-up that appears when the page loads
     WebElement 
-    button1 = WebDriverWait(driver, 20).until(EC.visibility_of_element_located(((By.XPATH, CONFIG['CANCEL_BUTTON_XPATH']))));
+    button1 = WebDriverWait(driver, 20).until(
+        EC.visibility_of_element_located(((By.XPATH, CONFIG['CANCEL_BUTTON_XPATH'])))
+    );
     button1.click();
 
     WebElement 
-    button2 = WebDriverWait(driver, 25).until(EC.visibility_of_element_located((By.CLASS_NAME, CONFIG['CANCEL_BUTTON_CLASS'])));
+    button2 = WebDriverWait(driver, 25).until(
+        EC.visibility_of_element_located((By.CLASS_NAME, CONFIG['CANCEL_BUTTON_CLASS']))
+    );
     button2.click();
 
     return driver
 
 def get_parser() -> argparse.ArgumentParser:
+     """
+    parse command line arguments
+
+    returns:
+        parser - ArgumentParser object
+    """
 
     parser = argparse.ArgumentParser(description='TechNext Scraper')
     parser.add_argument(
@@ -73,7 +83,9 @@ def ReadMore(driver):
     while (EC.visibility_of_element_located((By.XPATH, CONFIG['LOAD_MORE_XPATH']))):
         try:
             WebElement 
-            button3 = WebDriverWait(driver, 1).until(EC.visibility_of_element_located((By.XPATH, CONFIG['LOAD_MORE_XPATH'])));
+            button3 = WebDriverWait(driver, 1).until(
+                EC.visibility_of_element_located((By.XPATH, CONFIG['LOAD_MORE_XPATH']))
+            );
             button3.click();
         except:
             break
@@ -83,7 +95,7 @@ def ReadMore(driver):
 
 def get_valid_urls(driver) -> List[str]:
 
-    """ This function gets all the valid article urls and returns it in a list-set """
+    """ This function gets all the valid article urls and returns it in a list-set."""
 
     
     content = driver.page_source
@@ -103,7 +115,7 @@ def get_valid_urls(driver) -> List[str]:
 
 def get_data():
 
-    """ This function makes requests to all urls aschronuously and returns the responses in a list"""
+    """ This function makes requests to all urls aschronuously and returns the responses in a list."""
 
     urls = get_valid_urls(driver)
     reqs = [grequests.get(url) for url in urls]
@@ -112,7 +124,10 @@ def get_data():
 
 def split_data() -> Dict :
 
-    """ This Function splits the acquired responses from the urls into a nested list then converts it into a dictionary for multiprocessing """
+    """ 
+    This Function splits the acquired responses from the urls into a nested list
+    then converts it into a dictionary for multiprocessing.
+    """
 
     resp = get_data()
     chunk_size = len(resp)//5
