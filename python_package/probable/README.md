@@ -12,7 +12,7 @@ It can also be used to plot:
 - the histrogram of the distribution
 - and the normalized histogram of the data and also plot the probability density function along the same range
 
-The package can and also be used to magically add identical distribution together.
+The package can also be used to magically add identical distribution together.
 
 # Files
 
